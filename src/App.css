@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'keen-slider/keen-slider.min.css';
+
+
+@keyframes woodsool-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-woodsool-fade {
+  animation: woodsool-fade 0.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.fade-in-letter {
+  opacity: 0;
+  animation: fadeInLetter 0.4s forwards;
+}
+
+@keyframes fadeInLetter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 0.7em;
+  color: #fff;
+  font-weight: 400;
+  animation: blinkCursor 1s steps(2, start) infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.hero-compo-slide {
+  animation: heroCompoSlideDown s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes heroCompoSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-600px) scale(0.9) rotate(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(-10deg);
+  }
+}
+
+
+.imgBg{
+  background-image: url('./assets/download.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
