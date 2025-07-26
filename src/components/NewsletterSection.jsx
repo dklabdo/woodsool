@@ -39,7 +39,7 @@ const NewsletterSection = () => {
         </p>
         <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col items-center w-full max-w-lg mx-auto">
           <div className="flex w-full items-center border-b border-gray-300 py-2 bg-transparent">
-            <User className="w-4 h-4 md:w-5 md:h-5 text-gray-500 mr-2" />
+            <User className="w-4 min-w-4 min-h-4 h-4 md:w-5 md:h-5 text-gray-500 mr-2" />
             <input
               type="text"
               placeholder="Full name"
@@ -48,7 +48,7 @@ const NewsletterSection = () => {
             />
           </div>
           <div className="flex w-full items-center border-b border-gray-300 py-2 bg-transparent">
-            <EnvelopeIcon className="w-4 h-4 md:w-5 md:h-5 text-gray-500 mr-2" />
+            <EnvelopeIcon className="w-4 min-w-4 min-h-4 h-4 md:w-5 md:h-5 text-gray-500 mr-2" />
             <input
               type="email"
               placeholder="Email address"
