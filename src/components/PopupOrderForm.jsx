@@ -71,8 +71,8 @@ const PopupOrderForm = ({ isOpen, onClose, onSubmit, product }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 transition-opacity animate-fadeIn">
-      <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md transform transition-all scale-100 animate-popIn relative">
+    <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center bg-black bg-opacity-40 transition-opacity animate-fadeIn">
+      <div className="bg-white rounded-2xl md:rounded-b-2xl rounded-b-none  shadow-2xl p-8 w-full max-w-md transform transition-all scale-100 animate-popIn relative">
         {notification && (
           <div
             className={`fixed left-1/2 top-8 z-50 px-6 py-3 rounded-xl shadow-lg text-white text-center text-base font-semibold animate-popIn ${notification.type === 'success' ? 'bg-green-500' : 'bg-red-500'}`}
