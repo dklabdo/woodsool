@@ -26,7 +26,7 @@ const TopWoodSection = () => {
 
 function ImgCard({img}){
   return (
-    <div className="w-full md:w-64 h-72 cursor-pointer flex justify-center items-center  " >
+    <div className="w-full scale-90 md:scale-100 md:w-64 h-72 cursor-pointer flex justify-center items-center  " >
       <img src={img} alt="Hero" className=" hover:scale-105 hover:brightness-100 transition w-full h-full object-cover rounded-lg " />
     </div>
   )
