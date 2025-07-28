@@ -104,7 +104,7 @@ const NewArrivalsSection = () => {
                 product.isActivate && (
                   <div
                     key={index}
-                    className="scale-105  min-w-[220px] md:min-w-[260px] max-w-[220px] md:max-w-[260px]  rounded-xl shadow p-4 flex flex-col items-center relative"
+                    className="scale-105  min-w-[280px] md:min-w-[350px] max-w-[320px] md:max-w-[400px]  rounded-xl shadow p-4 flex flex-col items-center relative"
                   >
                     <button
                       onClick={() => handleToggleFavorite(index)}
@@ -119,7 +119,7 @@ const NewArrivalsSection = () => {
                         fill={favoriteArrivals[index] ? "red" : "none"}
                       />
                     </button>
-                    <p className="text-sm max-w-36 overflow-x-hidden text-gray-600 bg-gray-100 px-3 py-1 rounded-md  absolute top-4 left-4 z-10">
+                    <p className="text-sm max-w-48 overflow-x-hidden text-gray-500 bg-gray-100 px-3 py-1 rounded-md  absolute top-4 left-4 z-10">
                       {product.category}
                     </p>
 
@@ -127,10 +127,10 @@ const NewArrivalsSection = () => {
                     <h3 className="font-semibold w-full text-gray-800 text-sm md:text-base ">
                       {product.name}
                     </h3>
-                    <p className="text-gray-500 my-2 w-full text-xs md:text-sm ">
+                    <p className="text-gray-500 my-2 text-justify w-full text-xs ">
                       {product.description}
                     </p>
-                    <p className="text-gray-500 w-full text-xs  ">
+                    <p className="text-main font-semibold mt-2 w-full text-sm   ">
                       {product.price} DA
                     </p>
                     <button
@@ -178,7 +178,7 @@ export function ProductCarousel({ images }) {
     (images.length > 1 && (
       <div
         ref={sliderRef}
-        className="keen-slider w-full mt-12 h-28 md:h-36  mb-4"
+        className="keen-slider w-full mt-16  h-28 md:h-36  mb-6"
       >
         {images?.map((img, index) => (
           <img
